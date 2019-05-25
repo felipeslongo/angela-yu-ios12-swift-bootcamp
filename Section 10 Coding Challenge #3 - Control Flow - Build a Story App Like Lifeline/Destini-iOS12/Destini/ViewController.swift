@@ -36,13 +36,10 @@ class ViewController: UIViewController {
     
     // TODO Step 5: Initialise instance variables here
     
-    
-    
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
+        setupIntroStory()
         // TODO Step 3: Set the text for the storyTextView, topButton, bottomButton, and to T1_Story, T1_Ans1, and T1_Ans2
         
     }
@@ -55,11 +52,13 @@ class ViewController: UIViewController {
                 
         // TODO Step 6: Modify the IF-Statement to complete the story
         
-    
+    	
     }
     
-
-
-
+    fileprivate func setupIntroStory() {
+        storyTextView.text = story1
+        topButton.setTitle(answer1a, for: .normal)
+        bottomButton.setTitle(answer1b, for: .normal)
+    }
 }
 
